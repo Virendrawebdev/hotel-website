@@ -170,14 +170,14 @@ ul li a:hover{
     color: black;
 }
 
-@media (max-width:800PX){
+@media (max-width:1200PX){
     section{
      margin: 0;
      padding: 0;
      display: block;
     }
     .navbar{
-        width:150%;
+        width:100%;
         flex-direction: column;
     
     }
