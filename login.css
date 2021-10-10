@@ -156,3 +156,47 @@ ul li a:hover{
     background:red;
     transition: all 0.04s;
 }
+@media (max-width:900PX){
+    section{
+     margin: 0;
+     padding: 0;
+     display: block;
+    }
+    .navbar{
+        width:100%;
+        flex-direction: column;
+    
+    }
+    .nav-list{
+        width:100%;
+        flex-direction: column;
+
+    }
+    .logo{
+        width: 80%;
+        padding-top: 5px;
+    }
+    .rightnav{
+        text-align: center;
+        width:100%;
+        padding-top: 20px;
+    }
+    .nav-list li{
+        margin: 0;
+        padding: 5px;
+    }
+    .container{
+    margin:2px;
+    margin-left: 0px;
+    width: 100%;
+    position:absolute;
+    
+    }
+    .heading{
+        font-size:1em;
+        margin-bottom: 0.5em;
+        text-align: center;
+        color: honeydew;
+    
+    }
+}

@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swagat Hotel Websites</title>
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="signup.css">
 </head>
 <body>
   <nav class="navbar">
@@ -24,9 +24,15 @@
     </div>
 </nav>
 <div class="container">
-  <p class="heading">Login in</p>
+    <p class="heading">register</p>
+    <div class="box">
+      <p>Name</p>
+     <div>
+       <input type="name" name="name" id="name" placeholder="Enter your name">
+     </div>
+   </div>
   <div class="box">
-    <p>Email</p>
+     <p>Email</p>
     <div>
       <input type="email" name="email" id="email" placeholder="Enter your Email">
     </div>
@@ -37,8 +43,14 @@
     <input type="password" name="password" id="password" placeholder="Enter your password">
   </div>
   </div>
-  <button class="loginbtn">Login</button>
-  <p class="text">Don't have an account?<a href="signup.html">sign up</a></p>
+  <div class="box">
+    <p>ConfirmPassword</p>
+  <div>
+    <input type="confirmpassword" name="cpassword" id="cpassword" placeholder="Enter your Cofirmpassword">
+  </div>
+  </div>
+  <button class="loginbtn">register now</button>
+  <p class="text">have an account?<a href="login.html">login</a></p>
 </div>
 </body>
 </html>

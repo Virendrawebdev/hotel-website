@@ -106,7 +106,7 @@ ul li a:hover{
     outline: none;
 }
 footer{
-    background-color:rgba(158, 10, 243, 0.5);
+    background-color:rgba(65, 46, 77, 0.5);
     height: 10vh;
 }
 .contact-me{
@@ -118,3 +118,123 @@ footer{
    margin: 15px;
    color: white;
 }
+@media (max-width:900PX){
+    section{
+     margin: 0;
+     padding: 0;
+     display: block;
+    }
+    .navbar{
+        width:100%;
+        flex-direction: column;
+    
+    }
+    .nav-list{
+        width:100%;
+        flex-direction: column;
+
+    }
+    .logo{
+        width: 80%;
+        padding-top: 5px;
+    }
+    .rightnav{
+        text-align: center;
+        width:100%;
+        padding-top: 20px;
+    }
+    .heading{
+        width: 100%;
+        margin: 0;
+        padding-top: 35px;
+    }
+    .nav-list li{
+        margin: 0;
+        padding: 5px;
+    }
+    .heading h1{
+        font-size:170%;
+        padding-top: 10px;
+    }
+    .heading h2{
+        font-size: 110%;
+        padding-top: 9px;
+
+    }
+    .heading p{
+        font-size: 100%;
+        padding-top: 10px;
+    }
+    .btn1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12px;
+    }
+    .exp{
+        border: 2px solid black;
+        text-align: center;
+        font-size: 25px;
+        border-radius:10px;
+        font-weight: 600;
+        background-color:rgb(147, 155, 89);
+        color:white;
+        text-transform:capitalize;
+        padding:4px;
+    }
+    body{
+        height: 100vh;
+    background: rgba(0,0,0,0.6) url('images/bg.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    }
+    .ccenter{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-us{
+        color:white;
+        font-size:120%;
+        text-transform: uppercase;
+    }
+    .contact{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        width:80%;
+        background: none;
+        height:60vh;
+    }
+    .form-input{
+        margin: 14px 0;
+        padding: 5px 3px;
+        width: 100%;
+        font-size:100%;
+        border: 2px solid grey;
+        border-radius: 6px;
+    
+    }
+    .form-input:focus{
+        border: none;
+        outline: none;
+    }
+    footer{
+        background-color:rgba(65, 46, 77, 0.5);
+        height: 16vh;
+    }
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+        font-size:100%;
+        justify-content: center;
+    }
+    .contact-me p{
+       margin: 2px;
+       color: rgb(255, 255, 255);
+       font-weight: 700;
+
+    }
+}
+

@@ -97,41 +97,34 @@ ul li a:hover{
     padding: 10px;
     height: 60vh;
     background-color: rgba(0,0,0,0.5);
+    
 }
- #single{
-width: 33%;
-height: 50vh;
-color: white;
-font-size:16px;
+#single{
+    width: 40%;
+    height: 50vh;
+    color: white;
+    font-size:18px;
 }
 #single img{
-    width:32%;
+    width: 100%;
+    height:30vh;
     border: 2px solid grey;
     border-radius: 12px;
+
 }
 #double{
-    width: 33%;
+    width: 40%;
     height: 50vh;
     color: white;
     font-size:18px;
 }
 #double img{
-    width: 60%;
-    height:30vh;
-    border: 2px solid grey;
-    border-radius: 12px;
-}
-#delux{
-    width: 33%;
-    height: 50vh;
-    color: white;
-    font-size:18px;
-}
-#delux img{
-    width: 60%;
+    width: 100%;
     height:30vh ;
     border: 2px solid grey;
     border-radius: 12px;
+    margin-left: 20px;
+    margin-right: 2px;
 }
 .book{
     width: 100px;
@@ -146,24 +139,40 @@ font-size:16px;
     color:white;
     font-weight: 700;
 
-}.footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:rgba(0,0,0,0.5);
-    margin-top:55px;
 }
-.footer ul{
-    display: flex;
-    margin: 10px;
-    list-style-type: none;
-}
-.footer ul li a{
-    text-decoration: none;
-    margin: 70px;
-    padding: 10px;
-    font-size: 20px;
-    color:greenyellow;
-    background-color:black;
-    border-radius: 5px;
+@media (max-width:900PX){
+    section{
+     margin: 0;
+     padding: 0;
+     display: block;
+    }
+    .navbar{
+        width:100%;
+        flex-direction: column;
+    
+    }
+    .nav-list{
+        width:100%;
+        flex-direction: column;
+
+    }
+    .logo{
+        width: 80%;
+        padding-top: 5px;
+    }
+    .rightnav{
+        text-align: center;
+        width:100%;
+        padding-top: 20px;
+    }
+    .nav-list li{
+        margin: 0;
+        padding: 5px;
+    }
+    .room{
+        position: absolute;
+    }
+
+        
+
 }

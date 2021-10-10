@@ -11,6 +11,7 @@ body{
 }
 .navbar{
     display: flex;
+    position: sticky;
     top:0;
 
 }
@@ -67,45 +68,93 @@ input:focus{
     border: none;
     outline: none;
 }
-#serviceactive{
+#activelogin{
     color: red;
 }
 ul li a:hover{
     color:red;
 }
-.faci{
-    width:500px;
-    height:70vh;
-    background-color:rgb(34, 21, 21);
-    margin-left: 500px;
-}
-.faci h1{
-    font-size: 40px;
-    text-align: center;
-    width: 100%;
-    text-transform:uppercase;
-    color: white;
+.container{
+    background:rgb(15,15,15,0.6);
+    width: 400px;
+    height: 525px;
+    border-radius: 20px;
     display: flex;
+    justify-content: column;
     flex-direction: column;
-    align-items: center;
-}
-.ser{
-display: flex;
-flex-direction: column;
-align-items: center;
-    margin-top: 19px;
-
-}
-.ser p{
-    padding: 5px;
-    margin: 10px;
     color: white;
-    font-size: 20px;
-    font-weight: bold;
+    padding: 2em;
+    margin-left: 38%;
+}
+.heading{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
     text-transform: uppercase;
 }
-
-
+.box{
+    margin: 0.3em 0;
+}
+.container .box p{
+    color: rgb(255,255,255,0.781);
+}
+.container .box div{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 0.1em 0;
+}
+.container .box input{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    outline: none;
+    padding-left: 0.8em;
+    border-radius: 10px;
+    transition: all .04s;
+}
+.loginbtn:hover{
+    transform: translate(-1%,5%);
+    box-shadow: 0 0 10px #ff416d65;
+}
+.text{
+    font-size: 1em;
+    margin-top: 2.5em;
+    text-align: center;
+    color:rgba(255,255,255,0.623);
+}
+.text a{
+    color:rgba(255,255,255,0.911);
+}
+.container .box input:focus::placeholder{
+    color: white;
+}
+.container .box div::before{
+    content:'';
+    position: absolute;
+    top:0;
+    right:0;
+    transform: -50%,-50%;
+    width: 10%;
+    height: 100%;
+    border-radius:10px;
+    background:rgba(255,255,255,0.623);
+}
+.loginbtn{
+    width: 102%;
+    height:40vh;
+    border: none;
+    border-radius: 10px;
+    margin:1em 0;
+    transform: translate(-1%);
+    cursor: pointer;
+    color: white;
+    background:red;
+    transition: all 0.04s;
+}
 @media (max-width:900PX){
     section{
      margin: 0;
@@ -135,38 +184,18 @@ align-items: center;
         margin: 0;
         padding: 5px;
     }
-    .faci{
-        width:100%;
-        height:150%;
-        background-color:rgb(34, 21, 21);
-        margin-left: 0px;
+    .container{
+    margin:2px;
+    margin-left: 0px;
+    width: 100%;
+    position: absolute;
+    
     }
-    .faci h1{
-        font-size: 30px;
+    .heading{
+        font-size:1em;
+        margin-bottom: 0.5em;
         text-align: center;
-        width: 100%;
-        text-transform:uppercase;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
-    .ser{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-        margin-top:19px;
+        color: honeydew;
     
     }
-    .ser p{
-        font-style: italic;
-        padding: 3px;
-        margin: 5px;
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    
 }
